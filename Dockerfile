@@ -12,8 +12,8 @@ RUN bundle install
 
 COPY . /src/app
 
-RUN bundle exec rake db:create db:schema:load --trace
-RUN bundle exec rake db:migrate
+#RUN bundle exec rake db:create db:schema:load --trace
+#RUN bundle exec rake db:migrate
 
 EXPOSE 3000
 
